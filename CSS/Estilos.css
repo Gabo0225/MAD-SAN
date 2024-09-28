@@ -1,0 +1,27 @@
+*{
+    background-color: rgba(241, 142, 96, 0.667);
+    color: black;
+}
+
+h1 {
+    color: #dadada;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2 {
+    color: #3b4fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    color: #498f2d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Boton{
+    background-color: rgb(255, 140, 0);
+}
+
+.Cresaltado{
+    background-color: #498f2d;
+    
+}

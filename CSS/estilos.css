@@ -1,0 +1,27 @@
+*{
+    background-color:rgba(0, 188, 221, 0.197);
+    color:darkblue;
+    font-size: larger;
+
+}
+h1{
+    color: darkseagreen;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+#mariposa{
+    height: 300px;
+    width: 200px;
+}
+.resaltado{
+    color: brown;
+}   
+div{
+    width: 80% ; 
+    background-color: azure;
+}
+body{
+    margin-left: 200px;
+}

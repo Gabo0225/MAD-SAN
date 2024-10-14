@@ -175,6 +175,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
+    scroll-margin-top: 50px;
 }
 
 .Proximamente { 

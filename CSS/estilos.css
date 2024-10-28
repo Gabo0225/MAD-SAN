@@ -11,12 +11,11 @@
     background-color: black;
     color: #ffffff;
   }
-  body{
-    background-color: black;
-    color: #ffffff;
-  }
+
 
 body {
+    background-color: black;
+    color: #ffffff;
     min-height: 100vh;
     box-sizing: border-box;
 }
@@ -165,7 +164,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
-    margin-top: 50px    ;
+    margin-top: 50px;
 }
 
 .title2 {
@@ -201,7 +200,8 @@ body {
     overflow: hidden;
     padding-top: 56.25%;
     margin-top: 60px;
-    border: 3px solid rgb(87, 158, 180);
+    border-radius: 15px;
+    border: 2px solid rgb(87, 158, 180);
 }
 
 .contenedor-video iframe {
@@ -224,9 +224,9 @@ body {
 }
 
 #speech {
-    margin-top: 170px;
+    margin-top: 30%;
     text-align: center;
-    font-size: 80px;
+    font-size: 70px;
 }
 
 embed {
@@ -237,16 +237,41 @@ embed {
     border-radius: 15px;
 }
 
-#Diagrama {
-    padding: 5px 10px;
+#video {
+    border-radius: 15px;
 }
 
-#diana {
-    height: 410px;
-    width: 350px;
+.tittle3 {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    scroll-margin-top: 50px;
 }
+.Diagrama {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.Modelo {
+    width: 100%;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+.Modelo:hover {
+    transform: scale(1.4);
+    transition: 2s;
+}
+
 
 .card-text1 {
     color: #ffffff;
     text-align: right;
+}
+
+.DOC {
+    width: 100%;
 }

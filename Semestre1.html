@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <title>MAD-SAN</title>
     <link rel="stylesheet" href="CSS/estilos.css">
+    <!--script src="JS/Acciones.js"></-script>-->
 </head>
 <header class="header">
 
@@ -35,11 +36,12 @@
                 <li><a href="#Objetivos">Obejtivos</a></li>
                 <li><a href="#Diagrama">Diagrama de Gantt</a></li>
                 <li><a href="#Matriz">Matriz de riesgos</a></li>
+                <li><a href="#Modelo">Modelos</a></li>
                 <li><a href="#Encuesta">Encuesta</a></li>
-                <li><a href="#Respuesta">Respuestas</a></li>
               </ul>
             </li>
           </li>
+          <li><a href="DOCS/Documento.pdf" target="_blank">Documentación</a></li>
       </ul>
       <img id="logo" src="IMG/logo.png" alt="Logo de MAD-SAN">
   </nav>
@@ -52,7 +54,7 @@
       </div>
       <div class="col">
         <div class="contenedor-video">
-          <iframe src="https://www.youtube.com/embed/Qw_1CxXm6ZY?si=zqzGI3BQBlfjWm2e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe id="video" src="https://www.youtube.com/embed/Qw_1CxXm6ZY?si=zqzGI3BQBlfjWm2e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -77,14 +79,24 @@
       </div>
     <hr width="100%" noshade="noshade"><br>
       <h2 class="title2" id="Diagrama">Diagrama de Gantt</h2>
-      <img id="Diagrama" src="IMG/Diagrama.jpg" alt="">
+      <img class="Diagrama" src="IMG/Diagrama.jpg" alt="">
     <hr width="100%" noshade="noshade"><br>
       <h2 class="title2" id="Matriz">Matriz de riesgos</h2>
     <hr width="100%" noshade="noshade"><br>
-      <h2 class="title2" id="Encuesta">Encuesta</h2>
-      <embed src="DOCS/Encuesta.pdf" type="application/pdf"alt="Encuesta">
+    <h2 class="title2" id="Modelo">MODELOS</h2>
+    <div class="row">
+      <div class="col">
+      <h2 class="title2">Entidad-Relación</h2>
+      <img class="Modelo" src="IMG/Modelo ER.jpeg" alt="">
+      </div>
+      <div class="col">
+      <h2 class="title2">Relacional</h2>
+      <img class="Modelo" src="IMG/Modelo Relacional.jpeg" alt="">
+      </div>
+    </div>
     <hr width="100%" noshade="noshade"><br>
-      <h2 class="title2" id="Respuesta">Respuestas</h2>
+      <h2 class="title2" id="Encuesta">Encuesta</h2>
+      <embed class="DOC" src="DOCS/Encuesta.pdf" type="application/pdf"alt="Encuesta">
     <hr width="100%" noshade="noshade"><br>
   </div>
 </div>

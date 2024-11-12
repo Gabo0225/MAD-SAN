@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="WB DataDic" />
+    <meta name="description" content="madsan Data Dictionary." />
+    <title>MAD-SAN Data Dictionary</title>
+    <style type="text/css">
+    table{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    abbr{
+        cursor: help;
+    }
+    table, td, th{
+        border-style: solid;
+        border-width: 1px;
+    }
+    table caption{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    caption{
+        color: black;
+    }
+    td, th{
+        border-color: silver;
+    }
+    tr:hover{
+        color: #333;
+        background-color: #F2F2F2;
+    }
+    th{
+        background-color: silver;
+    }
+    td{
+        color: gray;
+    }
+    ul{
+        font-style: italic;
+    }
+    #title-sect{
+        color: gray;
+        text-align: right;
+    }
+    .proj-desc{
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+    <div id="title-sect">
+        <h1>MAD-SAN<br> Data Dictionay</h1>
+        <p><em>2024-11-08</em></p>
+        <p class="proj-desc"><em></em></p>
+    </div>
+    <h2>Alphabetic Index</h2>
+        <!--ul>
+            <li><a href='#cuidador'>cuidador</a></li>
+            <li><a href='#seguimiento'>seguimiento</a></li>
+            <li><a href='#ubicación'>ubicación</a></li>
+            <li><a href='#usuarios'>usuarios</a></li>
+        </-ul>-->
+    <table id='cuidador'>
+        <caption>Cuidador</caption>
+        <tr><td colspan='11'></td></tr>
+        <tr>
+            <th>Column name</th>
+            <th>DataType</th>
+            <th><abbr title='Primary Key'>PK</abbr></th>
+            <th><abbr title='Not Null'>NN</abbr></th>
+            <th><abbr title='Unique'>UQ</abbr></th>
+            <th><abbr title='Binary'>BIN</abbr></th>
+            <th><abbr title='Unsigned'>UN</abbr></th>
+            <th><abbr title='Zero Fill'>ZF</abbr></th>
+            <th><abbr title='Auto Increment'>AI</abbr></th>
+            <th>Default</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td>Numero_cedula</td>
+            <td>INT(11)</td>
+            <td>&#10004;</td>
+            <td>&#10004;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td></td>
+            <td>Numero de cedula del cuidador</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>VARCHAR(30)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Dirección de residencia del cuidador</td>
+        </tr>
+        <tr>
+            <td>Fecha nacimiento</td>
+            <td>DATE</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Fecha de nacimeinto del cuidador</td>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td>VARCHAR(45)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Nombres del cuidador</td>
+        </tr>
+        <tr>
+            <td>Huella</td>
+            <td>BLOB</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Huella dactilar del usuario para acceso a la app</td>
+        </tr>
+    <table id='seguimiento'>
+        <caption>Seguimiento</caption>
+        <tr><td colspan='11'></td></tr>
+        <tr>
+            <th>Column name</th>
+            <th>DataType</th>
+            <th><abbr title='Primary Key'>PK</abbr></th>
+            <th><abbr title='Not Null'>NN</abbr></th>
+            <th><abbr title='Unique'>UQ</abbr></th>
+            <th><abbr title='Binary'>BIN</abbr></th>
+            <th><abbr title='Unsigned'>UN</abbr></th>
+            <th><abbr title='Zero Fill'>ZF</abbr></th>
+            <th><abbr title='Auto Increment'>AI</abbr></th>
+            <th>Default</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td>idSeguimiento</td>
+            <td>INT(11)</td>
+            <td>&#10004;</td>
+            <td>&#10004;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td></td>
+            <td>Nimero identificador de cada seguimiento</td>
+        </tr>
+        <tr>
+            <td>IdUbicación</td>
+            <td>INT(11)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Numero de la ubicación del usuario</td>
+        </tr>
+        <tr>
+            <td>Fecha</td>
+            <td>DATE</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Fecha en que realiza el desplazamiento el usuario</td>
+        </tr>
+        <tr>
+            <td>Cedula_Cuidador</td>
+            <td>INT(11)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Numero de cedula del cuidador que realiza el seguimiento</td>
+        </tr>
+    <table id='ubicación'>
+        <caption>Ubicación</caption>
+        <tr><td colspan='11'></td></tr>
+        <tr>
+            <th>Column name</th>
+            <th>DataType</th>
+            <th><abbr title='Primary Key'>PK</abbr></th>
+            <th><abbr title='Not Null'>NN</abbr></th>
+            <th><abbr title='Unique'>UQ</abbr></th>
+            <th><abbr title='Binary'>BIN</abbr></th>
+            <th><abbr title='Unsigned'>UN</abbr></th>
+            <th><abbr title='Zero Fill'>ZF</abbr></th>
+            <th><abbr title='Auto Increment'>AI</abbr></th>
+            <th>Default</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td>id_Ubicación</td>
+            <td>INT(11)</td>
+            <td>&#10004;</td>
+            <td>&#10004;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+            <td>Numero de la ubicación del usuario</td>
+        </tr>
+        <tr>
+            <td>PuntoInicial</td>
+            <td>VARCHAR(45)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Dirección inicial del usuario</td>
+        </tr>
+        <tr>
+            <td>PuntoFinal</td>
+            <td>VARCHAR(45)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Dirección final del usuario</td>
+        </tr>
+    <table id='Usuarios'>
+        <caption>usuarios</caption>
+        <tr><td colspan='11'></td></tr>
+        <tr>
+            <th>Column name</th>
+            <th>DataType</th>
+            <th><abbr title='Primary Key'>PK</abbr></th>
+            <th><abbr title='Not Null'>NN</abbr></th>
+            <th><abbr title='Unique'>UQ</abbr></th>
+            <th><abbr title='Binary'>BIN</abbr></th>
+            <th><abbr title='Unsigned'>UN</abbr></th>
+            <th><abbr title='Zero Fill'>ZF</abbr></th>
+            <th><abbr title='Auto Increment'>AI</abbr></th>
+            <th>Default</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td>Numero_Documento</td>
+            <td>INT(11)</td>
+            <td>&#10004;</td>
+            <td>&#10004;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td></td>
+            <td>Numero identificador del usuario </td>
+        </tr>
+        <tr>
+            <td>Discapacidad visual</td>
+            <td>VARCHAR(15)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Porcentaje de la discapacidad visual </td>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td>VARCHAR(45)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Nombres de los usuarios</td>
+        </tr>
+        <tr>
+            <td>Fecha_Nacimiento</td>
+            <td>DATE</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Fecha de nacimiento de los usuarios </td>
+        </tr>
+        <tr>
+            <td>Direccion</td>
+            <td>VARCHAR(30)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Dirección de residencia de los usuarios</td>
+        </tr>
+        <tr>
+            <td>Tipo documento</td>
+            <td>VARCHAR(5)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Tipo de documento del usuario</td>
+        </tr>
+        <tr>
+            <td>Cedula_cuidador</td>
+            <td>INT(11)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Numero de cedula de la persona cuidador</td>
+        </tr>
+        <tr>
+            <td>Huella</td>
+            <td>BLOB</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class='attr'>&nbsp;</td>
+            <td>NULL</td>
+            <td>Huella dactilar del usuario para ingreso a la app</td>
+        </tr>
+    </tabl>
+</body>
+</html>

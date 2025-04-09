@@ -215,16 +215,24 @@ body {
     height: 100%;
 }
 
-.col {
-    width: 250px;
+#col1 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;   
+    text-align: justify;
+    padding: 20px;
+}
+
+#col2 {
+    width: 50%;
     display: inline-block;
     text-align: justify;
     padding: 20px;
 }
 
-.row {
-    text-align: center;
-}
+
 
 #speech {
     margin-top: 18%;
